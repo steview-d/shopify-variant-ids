@@ -1,0 +1,1 @@
+A script to pull variant ID values from a shopify product page.
