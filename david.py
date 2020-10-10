@@ -1,3 +1,5 @@
+# issue with recursions - if keep entering wrong url, when correct one entered, bugs out
+
 import json, re, requests
 from bs4 import BeautifulSoup
 
@@ -14,7 +16,7 @@ def get_variant_id():
         r = requests.get(url)
     except:
         print_to_screen(['Invalid URL'])
-        get_variant_id()
+        return
 
     soup = BeautifulSoup(r.text, 'html.parser')
     result = str(soup.find('script', text=re.compile('var meta = {"product":')))
