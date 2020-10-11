@@ -1,6 +1,3 @@
-# make script standalone
-
-
 import json, re, requests
 from bs4 import BeautifulSoup
 
