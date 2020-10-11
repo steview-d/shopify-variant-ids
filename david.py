@@ -1,4 +1,3 @@
-# add option to email results
 # make script standalone
 
 
@@ -88,7 +87,7 @@ def export_id_list():
         print_to_screen(['There are no IDs to export...'])
         return
 
-    export_options = ['[1] - Print to screen as .csv', '[2] - Email as .csv']
+    export_options = ['[1] - Print to screen as .csv', '[2] - Email as .csv [Not Yet Implemented]']
 
     #make csv list...
     ids_csv = ''
@@ -105,7 +104,7 @@ def export_id_list():
         print_to_screen([ids_csv])
         print('----------------')
     elif option == '2':
-        # email export here...
+        print_to_screen(['----------------', 'Feature still to be added...', '----------------'])
         pass
     return
 
